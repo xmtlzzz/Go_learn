@@ -23,5 +23,4 @@ var a int = 1
 func main() {
 	echoWeekDay(1)
 	echoWeekDay(Monday)
-	echoWeekDay(a)
 }
