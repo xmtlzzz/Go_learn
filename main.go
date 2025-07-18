@@ -2,25 +2,17 @@ package main
 
 import "fmt"
 
-type Weekday int
-
-const (
-	Sunday Weekday = iota
-	Monday
-	Tuesday
-	Wednesday
-	Thursday
-	Friday
-	Satday
-)
-
-func echoWeekDay(w Weekday) {
-	fmt.Printf("现在是星期%d\n", w)
-}
-
-var a int = 1
-
 func main() {
-	echoWeekDay(1)
-	echoWeekDay(Monday)
+	a := map[int]int{
+		1: 1,
+		2: 1,
+		3: 2,
+		4: 3,
+		5: 3,
+	}
+	n := 0
+	for v := range a {
+		n += 1
+		fmt.Printf("set的第%d元素为: %d\n", n, v)
+	}
 }
