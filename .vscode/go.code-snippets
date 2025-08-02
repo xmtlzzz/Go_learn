@@ -20,7 +20,7 @@
 		"scope": "go",
 		"prefix": "pf",
 		"body": [
-			"fmt.Printf()"
+			"fmt.Printf(\"%v\\n\",)"
 		],
 		"description": "go fmt.Printf"
 	},
@@ -31,5 +31,13 @@
 			"fmt.Println()"
 		],
 		"description": "go fmt.Println"
+	},
+		"echo err!=nil": {
+		"scope": "go",
+		"prefix": "err!",
+		"body": [
+			"if err!= nil {\n\n}"
+		],
+		"description": "go if err!=nil"
 	}
 }
